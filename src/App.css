@@ -27,6 +27,54 @@
 .App-link {
   color: #61dafb;
 }
+label{
+  display:block;
+  margin:10px auto;
+}
+button{
+  display: block;
+  padding: 20px;
+  width:6rem;
+  margin: 10px auto;
+}
+
+.home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.haldiaLink{
+  padding:5rem;
+  margin: 20px;
+  background-color: #f0ff64;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 2rem;
+  color:black;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.haldiaLink:hover{
+  background-color: #111111;
+  color:white;
+}
+.kandlaApp{
+  text-align: center;
+}
+.kandlaLink{
+  padding:5rem;
+  margin: 20px;
+  background-color: #f75454;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 2rem;
+  color:black;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.kandlaLink:hover{
+  background-color: #111111;
+  color:white;
+}
 
 @keyframes App-logo-spin {
   from {
