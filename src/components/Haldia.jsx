@@ -516,8 +516,9 @@ const Haldia = () => {
     //   }
     // }
     function copyData(){
-      const time=new Date().toLocaleTimeString()
-      const text ='Till '+time.slice(0,5)+' '+time.slice(9,11)+ '%0a Palm : '+(total.palmtotal)/1000 +'MT %0a Soya :'+ (total.soyatotal)/1000 +'MT%0a Rasoi :'+ (total.rasoitotal)/1000 +'MT%0a Bib :'+ (total.bibtotal)/1000+' MT%0a KGMO : '+(total.mustardtotal)/1000+'MT'
+      const time=new Date().toLocaleTimeString().split(' ')
+      const curTime = time[0].split(':')[0]+":"+time[0].split(':')[1]
+      const text ='Till '+curTime+' '+time[1]+ '%0a Palm : '+(total.palmtotal)/1000 +'MT %0a Soya :'+ (total.soyatotal)/1000 +'MT%0a Rasoi :'+ (total.rasoitotal)/1000 +'MT%0a Bib :'+ (total.bibtotal)/1000+' MT%0a KGMO : '+(total.mustardtotal)/1000+'MT'
       // navigator.clipboard.writeText(text).then(() => {
       //   alert("successfully copied");
       // })
