@@ -114,9 +114,10 @@ const Kandla = () => {
       }
 
       function copyData(){
-        const time=new Date().toLocaleTimeString().split(' ')
+        const time=new Date().toTimeString().split(' ')
         const curTime = time[0].split(':')[0]+":"+time[0].split(':')[1]
-        const text ='Till '+curTime+' '+time[1]+ '%0a Kandla Palm : '+(total.palmtotal)/1000 +'MT %0a '
+        const amPm = time[0].split(':')[0]>11?'PM' :'AM'
+        const text ='Till '+curTime+' '+amPm+ '%0a Kandla Palm : '+(total.palmtotal)/1000 +'MT %0a '
         // navigator.clipboard.writeText(text).then(() => {
         //   alert("successfully copied");
         // })
