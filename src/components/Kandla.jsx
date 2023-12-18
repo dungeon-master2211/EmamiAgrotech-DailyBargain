@@ -9,15 +9,15 @@ const Kandla = () => {
         },
         palm15LtrTin: {
           qty: 0,
-          toMT: 13.5
+          toMT: 13.35
         },
         palm1LtrPch: {
           qty: 0,
-          toMT: 9
+          toMT: 8.5
         },
         palm500mlPch: {
           qty: 0,
-          toMT: 9
+          toMT: 8.5
         }
       }
     

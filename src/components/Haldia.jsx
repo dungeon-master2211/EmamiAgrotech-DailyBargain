@@ -18,7 +18,7 @@ const Haldia = () => {
       mustardbp:0,
       mustardcp:0
     })
-    const data = {
+    const initial_data = {
         palmtotal: 0,
         soyatotal: 0,
         rasoitotal: 0,
@@ -30,15 +30,15 @@ const Haldia = () => {
         },
         palm15LtrTin: {
           qty: 0,
-          toMT: 13.5
+          toMT: 13.35
         },
         palm1LtrPch: {
           qty: 0,
-          toMT: 10.8
+          toMT: 10.2
         },
         palm500mlPch: {
           qty: 0,
-          toMT: 10.8
+          toMT: 10.2
         },
         soya15KgTin: {
           qty: 0,
@@ -46,15 +46,15 @@ const Haldia = () => {
         },
         soya15LtrTin: {
           qty: 0,
-          toMT: 13.5
+          toMT: 13.425
         },
         soya15LtrJar: {
           qty: 0,
-          toMT: 13.5
+          toMT: 13.425
         },
         soya5LtrJar: {
           qty: 0,
-          toMT: 18
+          toMT: 17.9
         },
         soya1LtrPet: {
           qty: 0,
@@ -62,15 +62,15 @@ const Haldia = () => {
         },
         soya500mlPet: {
           qty: 0,
-          toMT: 10.8
+          toMT: 10.2
         },
         soya200mlPet: {
           qty: 0,
-          toMT: 10.8
+          toMT: 10.2
         },
         soya1LtrPch: {
           qty: 0,
-          toMT: 10.8
+          toMT: 8.5
         },
         rasoi15KgTin: {
           qty: 0,
@@ -90,11 +90,11 @@ const Haldia = () => {
         },
         rasoi1LtrPch: {
           qty: 0,
-          toMT: 14.4
+          toMT: 14.24
         },
         rasoi500mlPch: {
           qty: 0,
-          toMT: 14.4
+          toMT: 14.24
         },
         bib: {
           qty: 0,
@@ -122,110 +122,7 @@ const Haldia = () => {
         }
     
       }
-    const [formData,setFormData] = useState({
-      palmtotal: 0,
-      soyatotal: 0,
-      rasoitotal: 0,
-      bibtotal:0,
-      mustardtotal:0,
-      palm15KgTin: {
-        qty: 0,
-        toMT: 15
-      },
-      palm15LtrTin: {
-        qty: 0,
-        toMT: 13.5
-      },
-      palm1LtrPch: {
-        qty: 0,
-        toMT: 10.8
-      },
-      palm500mlPch: {
-        qty: 0,
-        toMT: 10.8
-      },
-      soya15KgTin: {
-        qty: 0,
-        toMT: 15
-      },
-      soya15LtrTin: {
-        qty: 0,
-        toMT: 13.5
-      },
-      soya15LtrJar: {
-        qty: 0,
-        toMT: 13.5
-      },
-      soya5LtrJar: {
-        qty: 0,
-        toMT: 18
-      },
-      soya1LtrPet: {
-        qty: 0,
-        toMT: 10.8
-      },
-      soya500mlPet: {
-        qty: 0,
-        toMT: 10.8
-      },
-      soya200mlPet: {
-        qty: 0,
-        toMT: 10.8
-      },
-      soya1LtrPch: {
-        qty: 0,
-        toMT: 10.8
-      },
-      rasoi15KgTin: {
-        qty: 0,
-        toMT: 15
-      },
-      rasoi15KgJar: {
-        qty: 0,
-        toMT: 15
-      },
-      rasoi15LtrTin: {
-        qty: 0,
-        toMT: 13.5
-      },
-      rasoi15LtrJar: {
-        qty: 0,
-        toMT: 13.5
-      },
-      rasoi1LtrPch: {
-        qty: 0,
-        toMT: 14.4
-      },
-      rasoi500mlPch: {
-        qty: 0,
-        toMT: 14.4
-      },
-      bib: {
-        qty: 0,
-        toMT: 15
-      },
-      mustard15KgTin:{
-        qty:0,
-        toMT:15
-      },
-      mustard15LtrTin:{
-        qty:0,
-        toMT:13.65
-      },
-      mustard1LtrPch:{
-        qty:0,
-        toMT:10.92
-      },
-      mustard1LtrPet:{
-        qty:0,
-        toMT:10.92
-      },
-      mustard500mlPet:{
-        qty:0,
-        toMT:10.92
-      }
-  
-    })
+    const [formData,setFormData] = useState(JSON.parse(JSON.stringify(initial_data)))
   
     
     useEffect(()=>{
@@ -285,110 +182,7 @@ const Haldia = () => {
         setTotal({...totals})
         setBargain({...data})
       }else{
-        const data = {
-          palmtotal: 0,
-          soyatotal: 0,
-          rasoitotal: 0,
-          bibtotal:0,
-          mustardtotal:0,
-          palm15KgTin: {
-            qty: 0,
-            toMT: 15
-          },
-          palm15LtrTin: {
-            qty: 0,
-            toMT: 13.5
-          },
-          palm1LtrPch: {
-            qty: 0,
-            toMT: 10.8
-          },
-          palm500mlPch: {
-            qty: 0,
-            toMT: 10.8
-          },
-          soya15KgTin: {
-            qty: 0,
-            toMT: 15
-          },
-          soya15LtrTin: {
-            qty: 0,
-            toMT: 13.5
-          },
-          soya15LtrJar: {
-            qty: 0,
-            toMT: 13.5
-          },
-          soya5LtrJar: {
-            qty: 0,
-            toMT: 18
-          },
-          soya1LtrPet: {
-            qty: 0,
-            toMT: 10.8
-          },
-          soya500mlPet: {
-            qty: 0,
-            toMT: 10.8
-          },
-          soya200mlPet: {
-            qty: 0,
-            toMT: 10.8
-          },
-          soya1LtrPch: {
-            qty: 0,
-            toMT: 10.8
-          },
-          rasoi15KgTin: {
-            qty: 0,
-            toMT: 15
-          },
-          rasoi15KgJar: {
-            qty: 0,
-            toMT: 15
-          },
-          rasoi15LtrTin: {
-            qty: 0,
-            toMT: 13.5
-          },
-          rasoi15LtrJar: {
-            qty: 0,
-            toMT: 13.5
-          },
-          rasoi1LtrPch: {
-            qty: 0,
-            toMT: 14.4
-          },
-          rasoi500mlPch: {
-            qty: 0,
-            toMT: 14.4
-          },
-          bib: {
-            qty: 0,
-            toMT: 15
-          },
-          mustard15KgTin:{
-            qty:0,
-            toMT:15
-          },
-          mustard15LtrTin:{
-            qty:0,
-            toMT:13.65
-          },
-          mustard1LtrPch:{
-            qty:0,
-            toMT:10.92
-          },
-          mustard1LtrPet:{
-            qty:0,
-            toMT:10.92
-          },
-          mustard500mlPet:{
-            qty:0,
-            toMT:10.92
-          }
-      
-        }
+        const data = JSON.parse(JSON.stringify(initial_data))
         const initialTotal = {
           palmtotal:0,
           palmbp:0,
@@ -417,7 +211,7 @@ const Haldia = () => {
     }
   
     function handleReset(){
-      setBargain({...data})
+      setBargain({...initial_data})
       setTotal({palmtotal:0,
         palmbp:0,
         palmcp:0,
@@ -503,7 +297,7 @@ const Haldia = () => {
   
        console.log(newData)
        setBargain({...newData})
-       setFormData({...data})
+       setFormData({...initial_data})
        setTotal({...totals})
        localStorage.setItem('bargain',JSON.stringify(newData))
        alert("ADDED SUCCESSFULLY")

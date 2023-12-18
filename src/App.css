@@ -61,6 +61,11 @@ button{
 .kandlaApp{
   text-align: center;
 }
+.home{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .kandlaLink{
   padding:5rem;
   margin: 20px;
@@ -71,9 +76,79 @@ button{
   color:black;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.kandlaLink:hover{
+.kandlaLink:hover,.partywiseLink:hover,.newpartyLink:hover{
   background-color: #111111;
   color:white;
+}
+.partywiseLink{
+  padding:5rem;
+  margin: 20px;
+  background-color: #54f754;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 2rem;
+  color:black;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.newpartyLink{
+  padding:5rem;
+  margin: 20px;
+  background-color: #f7be54;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 2rem;
+  color:black;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.header-partywise{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+.header-partywise button{
+  padding:5px;
+}
+.haldia-form,.kandla-form{
+  text-align: center;
+}
+.allTotal{
+  text-align: center;
+}
+.btnGrp{
+  display: flex;
+}
+.btnGrp button{
+  padding: 5px 15px;
+  width: auto;
+  background-color: rgb(96, 60, 255);
+  outline: none;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.btnGrp button:hover{
+  background-color: rgb(56, 248, 104);
+  color:black;
+}
+.card-holder{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.total-card{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  border: 1px solid black;
+  padding:5px;
+  line-height: 2px;
+  margin: 1px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+details{
+  padding: 10px;
+  text-align: center;
 }
 
 @keyframes App-logo-spin {
